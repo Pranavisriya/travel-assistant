@@ -18,22 +18,24 @@ git clone https://github.com/Pranavisriya/travel-assistant.git
 cd travel-assistant
 ```
 
-2. Create a virtual python environment in this repo
+2. Install `uv` in the environment if it is not present
 ```bash
-conda create -p venv python=3.12 -y
+pip install uv
+```
+
+3. Create a virtual python environment in this repo
+```bash
+uv init
+uv venv -p 3.12
 ```
 
 Any other method can also be used to create python environment.
 
-3. Activate python environment
+4. Activate python environment
 ```bash
-conda activate ./venv
+source .venv/bin/activate
 ```
 
-4. Install `uv` in the environment if it is not present
-```bash
-pip install uv
-```
 
 5. Install dependencies using uv:
 ```bash
@@ -68,5 +70,6 @@ This project is licensed under the terms included in the LICENSE file.
 ## Author
 
 Pranavi Sriya (pranavisriyavajha9@gmail.com)
+
 
 
